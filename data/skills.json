@@ -1,0 +1,98 @@
+[
+    {
+        "category": "💻 Développement web",
+        "skills": [
+            {
+                "name": "HTML5 / CSS3",
+                "icon": "fa-brands fa-html5"
+            },
+            {
+                "name": "JavaScript (ES6+)",
+                "icon": "fa-brands fa-js"
+            },
+            {
+                "name": "React.js (débutant)",
+                "icon": "fa-brands fa-react"
+            },
+            {
+                "name": "Responsive design",
+                "icon": "fa-solid fa-mobile-screen"
+            },
+            {
+                "name": "Intégration de maquettes (Figma)",
+                "icon": "fa-brands fa-figma"
+            }
+        ]
+    },
+    {
+        "category": "🛠️ Outils techniques",
+        "skills": [
+            {
+                "name": "Git & GitHub",
+                "icon": "fa-brands fa-git-alt"
+            },
+            {
+                "name": "Visual Studio Code",
+                "icon": "fa-solid fa-code"
+            },
+            {
+                "name": "Chrome DevTools",
+                "icon": "fa-brands fa-chrome"
+            },
+            {
+                "name": "Canva",
+                "icon": "fa-solid fa-paintbrush"
+            }
+        ]
+    },
+    {
+        "category": "🧪 Test & Qualité",
+        "skills": [
+            {
+                "name": "Tests manuels",
+                "icon": "fa-solid fa-clipboard-check"
+            },
+            {
+                "name": "Revue d’exigences",
+                "icon": "fa-solid fa-list-check"
+            },
+            {
+                "name": "Stratégie de test",
+                "icon": "fa-solid fa-flask"
+            },
+            {
+                "name": "Cahier de recette",
+                "icon": "fa-solid fa-book"
+            },
+            {
+                "name": "Suivi de bugs",
+                "icon": "fa-solid fa-bug"
+            },
+            {
+                "name": "Communication devs",
+                "icon": "fa-solid fa-comments"
+            }
+        ]
+    },
+    {
+        "category": "📚 Méthodologie",
+        "skills": [
+            {
+                "name": "Agile / SCRUM",
+                "icon": "fa-solid fa-people-group"
+            },
+            {
+                "name": "Esprit d’analyse",
+                "icon": "fa-solid fa-brain"
+            },
+            {
+                "name": "Rigueur",
+                "icon": "fa-solid fa-scale-balanced"
+            },
+            {
+                "name": "Documentation",
+                "icon": "fa-solid fa-file-lines"
+            }
+        ]
+    }
+]

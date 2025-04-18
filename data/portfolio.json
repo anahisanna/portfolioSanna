@@ -1,0 +1,58 @@
+[
+    {
+        "image": "image1.png",
+        "title": "Riding Cities",
+        "text": "Objectif: Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML",
+        "code": "#",
+        "link": "#"
+    },
+    {
+        "image": "image2.jpg",
+        "title": "Booki",
+        "text": "Objectifs: Implémenter une interface responsive avec HTML et CSS.Installer un environnement de développement front-end. Intégrer du contenu conformément à une maquette avec HTML et CSS",
+        "code": "#",
+        "link": "#"
+    },
+    {
+        "image": "image3.png",
+        "title": "Print it",
+        "text": "Objectifs: Programmer en utilisant les fondamentaux de JavaScript.",
+        "code": "https://github.com/anahisanna/Print-It.git",
+        "link": "https://anahisanna.github.io/Print-It"
+    },
+    {
+        "image": "image4.png",
+        "title": "724 events",
+        "text": "Objectifs: Mener une investigation des anomalies d’un site afin de permettre leur résolution. Mettre à jour un cahier de recette. Rédiger un bilan de campagne de test.",
+        "code": "#",
+        "link": "#"
+    },
+    {
+        "image": "image5.png",
+        "title": "Sophie Bluel",
+        "text": "Objectifs: Versionner son projet avec Git et Github.Gérer les événements utilisateurs avec JavaScript. Manipuler des éléments du DOM avec JavaScript. Récupérer les données utilisateurs dans le JavaScript via des formulaires",
+        "code": "https://github.com/anahisanna/sophieBluel.git",
+        "link": "#"
+    },
+    {
+        "image": "image6.png",
+        "title": "EcoBliss Bath",
+        "text": "Objectifs: Créer une page web dynamique pour le site d’une architecte d’intérieur, en utilisant JavaScript pour gérer les interactions utilisateur, manipuler le DOM afin de modifier le contenu en temps réel, et récupérer les données saisies dans les formulaires via une API.",
+        "code": "https://github.com/anahisanna/EcoBlissBath.git",
+        "link": "#"
+    },
+    {
+        "image": "image7.png",
+        "title": "Kasa",
+        "text": "Objectifs: Configurer la navigation entre les pages de l'application avec React Router. Développer des éléments de l'interface d'un site web grâce à des composants React. Initialiser une application avec Create React App. Afficher les données du back end sur l'interface via des appels API. Mettre en œuvre des animations CSS",
+        "code": "https://github.com/anahisanna/KASA.git",
+        "link": "#"
+    },
+    {
+        "image": "image8.png",
+        "title": "Tomsen",
+        "text": "Objectifs: Rédiger un cahier de recette pour tester un site.Rédiger une stratégie de test. Analyser les spécifications fonctionnelles.",
+        "code": "https://github.com/anahisanna/KASA.git",
+        "link": "#"
+    }
+]

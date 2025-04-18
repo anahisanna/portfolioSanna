@@ -1,0 +1,333 @@
+:root {
+    --bg-general: #FFF9F0;
+    --color-principal: #5A6F57;
+    --color-accent: #B96F4E;
+    --blanc: #ffffff;
+}
+
+/* ---------- TYPO & BODY ---------- */
+/* Fondo de toda la página */
+body {
+    background-image: url('images/backO1.png') !important;
+    /* Asegúrate que la imagen esté en la carpeta correcta */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-principal);
+    font-weight: 500 !important;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background-color: var(--bg-general);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid var(--color-principal);
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--color-principal) !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: var(--color-accent) !important;
+}
+
+.nav-link {
+    color: var(--color-principal) !important;
+    margin-left: 1rem;
+}
+
+/* ---------- SECTIONS GÉNÉRALES ---------- */
+.section {
+    padding: 100px 0;
+}
+
+#about,
+#skills,
+#portfolio,
+#contact {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+#about h2,
+#skills h2,
+#portfolio h2,
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+#contact {
+    padding-bottom: 4rem;
+}
+
+/* ---------- ACCUEIL ---------- */
+#accueil {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.accueil-content {
+    z-index: 1;
+    text-align: center;
+    transform: translateY(-40px);
+}
+
+.btn-custom,
+.card .btn {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: transparent;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-custom:hover,
+.card .btn:hover {
+    background-color: var(--color-accent);
+    color: var(--blanc);
+}
+
+.btn-custom:focus,
+.card .btn:focus,
+.btn-custom:active,
+.card .btn:active,
+.btn-custom:focus-visible,
+.card .btn:focus-visible {
+    background-color: transparent !important;
+    color: var(--color-accent) !important;
+    border: 2px solid var(--color-accent) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-custom:active,
+.card .btn:active {
+    transform: scale(0.96);
+    transition: transform 0.1s ease;
+}
+
+.btn-position {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* ---------- À PROPOS ---------- */
+#about img {
+    border: 3px solid var(--color-accent);
+    border-radius: 30px;
+    max-width: 90%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: var(--color-principal);
+    text-align: justify;
+}
+
+#about .titre-principal {
+    margin-bottom: 2.5rem;
+}
+
+/* ---------- COMPÉTENCES ---------- */
+#skills p {
+    text-align: center;
+}
+
+.skillsIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4B6342;
+}
+
+.skillsText {
+    background-color: var(--bg-general);
+    border: 1px solid #eae0d5;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skillsText:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    border: 1px solid #008000;
+}
+
+.skillsText img {
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.skillsText .card-text {
+    font-size: 0.9rem;
+    color: var(--color-texte);
+    text-align: center;
+}
+
+/* ---------- PORTFOLIO ---------- */
+#portfolio {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#portfolio p {
+    text-align: center;
+}
+
+#portfolio .container {
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 10px 60px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track .card {
+    flex: 0 0 calc((100% - 80px) / 3);
+    max-width: calc((100% - 80px) / 3);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.06), 0 24px 48px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 520px;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px 0;
+}
+
+.carousel-track .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08), 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 0.75rem;
+    color: var(--color-principal);
+    margin-bottom: auto;
+    padding: 0 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 3rem;
+    padding: 8px;
+    color: var(--color-accent);
+    transition: transform 0.2s ease;
+}
+
+.carousel-btn:hover {
+    transform: translateY(-50%) scale(1.15);
+}
+
+#prevBtn {
+    left: 0px;
+}
+
+#nextBtn {
+    right: 0px;
+}
+
+/* ---------- CONTACT ---------- */
+.contactColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactColumn i {
+    color: #198754;
+}
+
+/* ---------- BOUTONS EN GROUPE ---------- */
+.btn-group-custom {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}

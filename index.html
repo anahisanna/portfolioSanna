@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Portfolio Anahí Sanna</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#accueil">Anahi Sanna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ACCUEIL -->
+    <section id="accueil" class="section text-center position-relative">
+        <div class="accueil-content">
+            <h1 class="titre-principal">Bienvenue sur mon portfolio</h1>
+        </div>
+        <a href="#portfolio" class="btn-custom btn-position">Voir mes projets</a>
+
+    </section>
+    <!-- À PROPOS -->
+    <section id="about" class="section">
+
+        <div class="container">
+            <h2 class="text-center mb-5 titre-principal">À propos de moi</h2>
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+                    <img src="images/anahi.jpg" alt="Photo de profil d'Anahi" class="img-fluid shadow">
+                </div>
+                <div class="col-md-7">
+                    <p>
+                        Je suis Anahi, originaire d’Argentine et diplômée en sciences de la communication. Après avoir
+                        travaillé en France pendant deux ans, j’ai découvert une nouvelle culture, de nouveaux
+                        environnements professionnels et peu à peu, le désir de m’investir dans un domaine structuré,
+                        exigeant et porteur de sens : le test logiciel.
+                    </p>
+                    <p>
+                        Ma reconversion vers le métier de testeur QA s’est nourrie de bases solides en développement
+                        web.
+                        J’ai travaillé sur des projets en HTML, CSS, JavaScript et React, et je maîtrise des outils
+                        comme
+                        Git, Visual Studio Code ou encore Canva. Cette double compétence me permet de mieux comprendre
+                        les
+                        produits que je teste, et de collaborer efficacement avec les équipes de développement.
+                    </p>
+                    <p>
+                        Au cours de ma formation, j’ai mené des projets de tests manuels et automatisés, incluant la
+                        revue
+                        d’exigences, la définition d’une stratégie de test et la rédaction d’un cahier de recette.
+                        Ces
+                        expériences m’ont permis de développer une approche rigoureuse, structurée et orientée
+                        qualité.
+                    </p>
+                    <p>
+                        Curieuse, intuitive et impliquée, j’apprends vite et j’aime aller au fond des choses.
+                        Aujourd’hui,
+                        je suis à la recherche de mon premier poste en tant que testeur QA, où je pourrai mettre à
+                        profit
+                        mes compétences tout en continuant à évoluer dans ce métier stimulant et enrichissant.
+                    </p>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="carousel-wrapper">
+                <button id="prevBtn" class="carousel-btn">
+                    <i class="fa-solid fa-circle-arrow-left" style="color: #b96f4e;"></i>
+                </button>
+
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Tarjetas se insertarán aquí dinámicamente -->
+                </div>
+
+                <button id="nextBtn" class="carousel-btn">
+                    <i class="fa-solid fa-circle-arrow-right" style="color: #b96f4e;"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section-->
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center mb-5"> Mes Compétences</h2>
+            <div class="row" id="skillsGrid"></div>
+        </div>
+    </section>
+
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h2 class="text-center">Contactez-moi</h2>
+            <div class="row">
+                <div class="col-lg-4 mt-4 contactColumn">
+                    <i class="fa-solid fa-phone fa-4x"></i>
+                    <h4>Téléphone</h4>
+                    <p>06-06-06-06-06</p>
+                </div>
+                <div class="col-lg-4 mt-4 contactColumn">
+                    <i class="fa-regular fa-envelope fa-4x"></i>
+                    <h4>Adresse email</h4>
+                    <p>prénom.nom@gmail.com</p>
+                </div>
+                <div class="col-lg-4 mt-4 contactColumn">
+                    <i class="fa-brands fa-linkedin-in fa-4x"></i>
+                    <h4>LinkedIn</h4>
+                    <p>LinkedIn Name</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
