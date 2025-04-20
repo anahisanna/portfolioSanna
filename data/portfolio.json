@@ -5,8 +5,8 @@
         "objectifs": [
             "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML."
         ],
-        "code": "#",
-        "link": "#"
+        "code": "https://github.com/anahisanna/RidingCities",
+        "link": "https://ridingcities0.netlify.app/"
     },
     {
         "image": "image2.jpg",
@@ -16,8 +16,8 @@
             "Installer un environnement de développement front-end.",
             "Intégrer du contenu conformément à une maquette avec HTML et CSS."
         ],
-        "code": "#",
-        "link": "#"
+        "code": "https://github.com/anahisanna/Booki",
+        "link": "http://bookitourisme.netlify.app/"
     },
     {
         "image": "image3.png",
@@ -36,8 +36,8 @@
             "Mettre à jour un cahier de recette.",
             "Rédiger un bilan de campagne de test."
         ],
-        "code": "#",
-        "link": "#"
+        "code": "https://github.com/anahisanna/724events.git",
+        "link": "https://events724.onrender.com"
     },
     {
         "image": "image5.png",
@@ -82,7 +82,7 @@
             "Rédiger un cahier de recette pour tester un site.",
             "Rédiger une stratégie de test. Analyser les spécifications fonctionnelles."
         ],
-        "code": "https://github.com/anahisanna/KASA.git",
+        "code": "#",
         "link": "#"
     }
 ]
