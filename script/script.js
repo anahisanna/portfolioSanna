@@ -11,57 +11,6 @@ function handleNavbarScroll() {
     };
 }
 
-// Function to dynamically create HTML elements from the JSON file
-function createPortfolioFromJSON() {
-    const track = document.getElementById("carouselTrack");
-
-    fetch("data/portfolio.json")
-        .then((response) => response.json())
-        .then((data) => {
-            let visibleCards = 3;
-            let currentIndex = 0;
-            const total = data.length;
-
-            function renderCards(startIndex) {
-                track.innerHTML = "";
-
-                for (let i = 0; i < visibleCards; i++) {
-                    const index = (startIndex + i) % total;
-                    const item = data[index];
-
-                    const card = document.createElement("div");
-                    card.classList.add("card", "portfolioContent");
-                    card.innerHTML = `
-                        <img class="card-img-top" src="images/${item.image}" />
-                        <div class="card-body">
-                            <h4 class="card-title">${item.title}</h4>
-                            <p class="card-text">${item.text}</p>
-                            <div class="btn-group-custom">
-    <a href="${item.code}" class="btn-custom">Code</a>
-    <a href="${item.link}" class="btn-custom">Site web</a>
-</div>
-
-                        </div>
-                    `;
-                    track.appendChild(card);
-                }
-            }
-
-            // Navigation - Avancer de 1 image à la fois
-            document.getElementById("nextBtn").addEventListener("click", () => {
-                currentIndex = (currentIndex + 1) % total;
-                renderCards(currentIndex);
-            });
-
-            document.getElementById("prevBtn").addEventListener("click", () => {
-                currentIndex = (currentIndex - 1 + total) % total;
-                renderCards(currentIndex);
-            });
-
-            // Initialisation
-            renderCards(currentIndex);
-        });
-}
 // Function to handle navbar collapse on small devices after a click
 function handleNavbarCollapse() {
     const navLinks = document.querySelectorAll(".nav-item");
@@ -73,6 +22,109 @@ function handleNavbarCollapse() {
         });
     });
 }
+
+// PORTFOLIO
+
+function createPortfolioFromJSON() {
+    const track = document.getElementById("carouselTrack");
+    let currentIndex = 0;
+    let visibleCards = 3;
+    let data = [];
+
+    // Fonction pour déterminer le nombre de cartes visibles selon la taille de l'écran
+    function getVisibleCards() {
+        const width = window.innerWidth;
+        if (width < 768) {
+            return 1; // Mobile
+        } else if (width < 1024) {
+            return 2; // Tablette
+        } else {
+            return 3; // Desktop
+        }
+    }
+
+    // Fonction pour afficher les cartes dans le carrousel
+    function renderCards(startIndex) {
+        visibleCards = getVisibleCards(); // Met à jour selon la taille actuelle
+        track.innerHTML = "";
+        const total = data.length;
+
+        for (let i = 0; i < visibleCards; i++) {
+            const index = (startIndex + i) % total;
+            const item = data[index];
+            const objectifsArray = item.objectifs || item.text || [];
+
+            const card = document.createElement("div");
+            card.classList.add("card", "portfolioContent");
+            card.innerHTML = `
+                <img class="card-img-top" src="images/${item.image}" />
+                <div class="card-body">
+                    <h4 class="card-title" onclick='openModal("${item.title}", ${JSON.stringify(objectifsArray)})'>
+                        ${item.title}
+                    </h4>
+                    <div class="btn-group-custom">
+                        <a href="${item.code}" class="btn-custom" target="_blank">Code</a>
+                        <a href="${item.link}" class="btn-custom" target="_blank">Site web</a>
+                    </div>
+                </div>
+            `;
+            track.appendChild(card);
+        }
+    }
+
+    // Requête fetch pour récupérer les données JSON
+    fetch("data/portfolio.json")
+        .then((response) => response.json())
+        .then((jsonData) => {
+            data = jsonData;
+            renderCards(currentIndex);
+
+            // Réaffiche les cartes si on redimensionne la fenêtre
+            window.addEventListener("resize", () => {
+                renderCards(currentIndex);
+            });
+
+            // Bouton suivant
+            document.getElementById("nextBtn").addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % data.length;
+                renderCards(currentIndex);
+            });
+
+            // Bouton précédent
+            document.getElementById("prevBtn").addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + data.length) % data.length;
+                renderCards(currentIndex);
+            });
+        });
+}
+// Ouvre la modale avec les objectifs
+function openModal(title, objectifs) {
+    document.getElementById("modalTitle").innerText = title;
+    const content = document.getElementById("modalContent");
+    content.innerHTML = objectifs.map(obj => `<li>📌 ${obj}</li>`).join("");
+    document.getElementById("customModal").style.display = "flex";
+}
+
+// Ferme la modale
+function closeModal() {
+    document.getElementById("customModal").style.display = "none";
+}
+
+// Ferme la modale si on clique à l'extérieur
+window.addEventListener("click", function (e) {
+    const modal = document.getElementById("customModal");
+    if (e.target === modal) {
+        closeModal();
+    }
+});
+
+// Ferme la modale avec la touche Échap
+window.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        closeModal();
+    }
+});
+
 
 // Function to dynamically create HTML elements from the JSON file
 function renderSkillsGrid() {
