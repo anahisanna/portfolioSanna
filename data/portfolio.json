@@ -1,6 +1,7 @@
 [
     {
-        "image": "image1.png",
+        "image": "image1.webp",
+        "alt": "skate Riding Cities",
         "title": "Riding Cities",
         "objectifs": [
             "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML."
@@ -9,8 +10,9 @@
         "link": "https://ridingcities0.netlify.app/"
     },
     {
-        "image": "image2.jpg",
+        "image": "image2.webp",
         "title": "Booki",
+        "alt": "hebbergement booki",
         "objectifs": [
             "Implémenter une interface responsive avec HTML et CSS.",
             "Installer un environnement de développement front-end.",
@@ -20,8 +22,9 @@
         "link": "http://bookitourisme.netlify.app/"
     },
     {
-        "image": "image3.png",
+        "image": "image3.webp",
         "title": "Print it",
+        "alt": "machine impression print it",
         "objectifs": [
             "Programmer en utilisant les fondamentaux de JavaScript."
         ],
@@ -29,8 +32,9 @@
         "link": "https://anahisanna.github.io/Print-It"
     },
     {
-        "image": "image4.png",
+        "image": "image4.webp",
         "title": "724 events",
+        "alt": "celebration events",
         "objectifs": [
             "Mener une investigation des anomalies d’un site afin de permettre leur résolution.",
             "Mettre à jour un cahier de recette.",
@@ -40,8 +44,9 @@
         "link": "https://724events-as.netlify.app/"
     },
     {
-        "image": "image5.png",
+        "image": "image5.webp",
         "title": "Sophie Bluel",
+        "alt": "photo Sophie Bluel",
         "text": [
             "Versionner son projet avec Git et Github.",
             "Gérer les événements utilisateurs avec JavaScript.",
@@ -52,8 +57,9 @@
         "link": "#"
     },
     {
-        "image": "image6.png",
+        "image": "image6.webp",
         "title": "EcoBliss Bath",
+        "alt": "pub photo ecobliss",
         "text": [
             "Analyser les besoins en automatisation de tests.",
             "Automatiser des tests via des scripts.",
@@ -63,8 +69,9 @@
         "link": "#"
     },
     {
-        "image": "image7.png",
+        "image": "image7.webp",
         "title": "Kasa",
+        "alt": "hebergement kasa",
         "text": [
             "Configurer la navigation entre les pages de l’application avec React Router.",
             "Développer des éléments de l’interface d’un site web grâce à des composants React.",
@@ -76,8 +83,9 @@
         "link": "#"
     },
     {
-        "image": "image8.png",
+        "image": "image8.webp",
         "title": "Tomsen",
+        "alt": "app bancaire",
         "text": [
             "Rédiger un cahier de recette pour tester un site.",
             "Rédiger une stratégie de test. Analyser les spécifications fonctionnelles."

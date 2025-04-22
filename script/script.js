@@ -66,7 +66,7 @@ function createPortfolioFromJSON() {
             const card = document.createElement("div");
             card.classList.add("card", "portfolioContent");
             card.innerHTML = `
-            <img class="card-img-top" src="images/${item.image}" />
+            <img class="card-img-top" src="images/${item.image}" alt="${item.alt}"/>
             <div class="card-body">
                 <h4 class="card-title" onclick='openModal("${item.title}", ${JSON.stringify(objectifsArray)})'>
                     ${item.title}

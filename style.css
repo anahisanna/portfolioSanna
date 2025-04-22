@@ -8,7 +8,7 @@
 /* ---------- TYPO & BODY ---------- */
 /* Fondo de toda la página */
 body {
-    background-image: url('images/background.png') !important;
+    background-image: url('images/background.webp') !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
