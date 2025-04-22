@@ -66,11 +66,11 @@ function createPortfolioFromJSON() {
             const card = document.createElement("div");
             card.classList.add("card", "portfolioContent");
             card.innerHTML = `
-            <img class="card-img-top" src="images/${item.image}" alt="${item.alt}"/>
+            <img class="card-img-top" src="images/${item.image}" alt="${item.alt}">
             <div class="card-body">
-                <h4 class="card-title" onclick='openModal("${item.title}", ${JSON.stringify(objectifsArray)})'>
+                <h3 class="card-title" onclick='openModal("${item.title}", ${JSON.stringify(objectifsArray)})'>
                     ${item.title}
-                </h4>
+                </h3>
                 <div class="btn-group-custom">
                     ${buttons}
                 </div>
@@ -148,7 +148,7 @@ function renderSkillsGrid() {
                 const card = document.createElement("div");
                 card.className = "p-3 shadow-sm rounded bg-light h-100";
 
-                const title = document.createElement("h5");
+                const title = document.createElement("h3");
                 title.className = "mb-3 fw-bold";
                 title.innerText = section.category;
 

@@ -98,7 +98,7 @@ h6 {
     border-radius: 999px;
     background-color: transparent;
     border: 2px solid var(--color-accent);
-    color: var(--color-accent);
+    color: #87432D;
     transition: all 0.3s ease;
     cursor: pointer;
     text-decoration: none;
