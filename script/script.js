@@ -54,20 +54,28 @@ function createPortfolioFromJSON() {
             const item = data[index];
             const objectifsArray = item.objectifs || item.text || [];
 
+            // Construction conditionnelle des boutons
+            let buttons = "";
+            if (item.code && item.code !== "#") {
+                buttons += `<a href="${item.code}" class="btn-custom" target="_blank">Code</a>`;
+            }
+            if (item.link && item.link !== "#") {
+                buttons += `<a href="${item.link}" class="btn-custom" target="_blank">Site web</a>`;
+            }
+
             const card = document.createElement("div");
             card.classList.add("card", "portfolioContent");
             card.innerHTML = `
-                <img class="card-img-top" src="images/${item.image}" />
-                <div class="card-body">
-                    <h4 class="card-title" onclick='openModal("${item.title}", ${JSON.stringify(objectifsArray)})'>
-                        ${item.title}
-                    </h4>
-                    <div class="btn-group-custom">
-                        <a href="${item.code}" class="btn-custom" target="_blank">Code</a>
-                        <a href="${item.link}" class="btn-custom" target="_blank">Site web</a>
-                    </div>
+            <img class="card-img-top" src="images/${item.image}" />
+            <div class="card-body">
+                <h4 class="card-title" onclick='openModal("${item.title}", ${JSON.stringify(objectifsArray)})'>
+                    ${item.title}
+                </h4>
+                <div class="btn-group-custom">
+                    ${buttons}
                 </div>
-            `;
+            </div>
+        `;
             track.appendChild(card);
         }
     }

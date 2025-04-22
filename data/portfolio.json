@@ -37,7 +37,7 @@
             "Rédiger un bilan de campagne de test."
         ],
         "code": "https://github.com/anahisanna/724events.git",
-        "link": "https://github.com/anahisanna/724events.git"
+        "link": "https://724events-as.netlify.app/"
     },
     {
         "image": "image5.png",
@@ -49,7 +49,7 @@
             "Récupérer les données utilisateurs dans le JavaScript via des formulaires."
         ],
         "code": "https://github.com/anahisanna/sophieBluel.git",
-        "link": "https://github.com/anahisanna/sophieBluel.git"
+        "link": "#"
     },
     {
         "image": "image6.png",
@@ -60,7 +60,7 @@
             "Rédiger un bilan de campagne de tests automatisés."
         ],
         "code": "https://github.com/anahisanna/EcoBlissBath.git",
-        "link": "https://github.com/anahisanna/EcoBlissBath.git"
+        "link": "#"
     },
     {
         "image": "image7.png",
@@ -73,7 +73,7 @@
             "Mettre en œuvre des animations CSS."
         ],
         "code": "https://github.com/anahisanna/KASA.git",
-        "link": "https://github.com/anahisanna/KASA.git"
+        "link": "#"
     },
     {
         "image": "image8.png",
@@ -82,7 +82,7 @@
             "Rédiger un cahier de recette pour tester un site.",
             "Rédiger une stratégie de test. Analyser les spécifications fonctionnelles."
         ],
-        "code": "https://tomsen-tests.netlify.app/",
+        "code": "#",
         "link": "https://tomsen-tests.netlify.app/"
     }
 ]
